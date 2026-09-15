@@ -1,15 +1,7 @@
 function convertirAFahrenheit() {
-
-    let entrada = document.getElementById("celsius").value;
-    if (entrada === "") {
-        alert("Ingresa una temperatura");
-        return;
-    }
-    let celsius = parseFloat(entrada);
-    if (isNaN(celsius)) {
-        alert("Ingresa un valor numérico");
-        return;
-    }
+    let celsius = document.getElementById("celsius").value;
     let fahrenheit = (celsius * 9/5) + 32;
-    document.getElementById("fahrenheit").value = fahrenheit;
+    
+    // Asigna el texto directamente a la etiqueta
+    document.getElementById("resultado").textContent = "Grados Fahrenheit: " + fahrenheit + "°F";
 }
