@@ -1,0 +1,32 @@
+
+body{
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #afaeae5b;
+}
+.container{
+    background-color: #c4a6bdcd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(125, 2, 90, 0.453);
+}
+html, body {
+    font-size: 19px;
+}
+input,select,button{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9a6d89;
+    border-radius: 10 px;
+}
+button {
+    background-color: #993ac2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #bd09ff;
+}

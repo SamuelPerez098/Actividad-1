@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Ejercicios - Actividad 1</title>
+    
+    <!-- Fuentes de Google: Caligrafía China Tradicional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Zhi Mang Xing', 'Ma Shan Zheng', cursive, serif;
+            min-height: 100vh;
+            /* Imagen de fondo sin filtros oscuros para apreciar el lienzo */
+            background-image: url('img/dorolago.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        /* Título con estilo de pincelada antigua */
+        h1 {
+            font-family: 'Ma Shan Zheng', cursive, serif;
+            color: #2b1d0c;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6), 
+                         0px 0px 10px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        /* Contenedor estilo Pergamino Transparente */
+        .pergamino-container {
+            background: rgba(245, 238, 220, 0.75); /* Tono papiro/pergamino semitransparente */
+            backdrop-filter: blur(3px);
+            border-top: 3px solid #8b5a2b;
+            border-bottom: 3px solid #8b5a2b;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            padding: 25px 40px;
+            max-width: 600px;
+            width: 90%;
+            border-radius: 8px;
+        }
+
+        /* Lista libre sin cuadros */
+        .lista-ejercicios {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .lista-ejercicios li {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Enlaces tipo pinceladas */
+        .lista-ejercicios a {
+            display: inline-block;
+            font-size: 2.2rem;
+            color: #3d2314;
+            text-decoration: none;
+            padding: 5px 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* Efecto al pasar el cursor (sombra roja de sello imperial e inclinación suave) */
+        .lista-ejercicios a:hover {
+            color: #8b0000; /* Rojo tinta china/sello */
+            transform: scale(1.1) rotate(-1deg);
+            text-shadow: 1px 1px 2px rgba(139, 0, 0, 0.3);
+        }
+
+        /* Puntos decorativos entre el texto */
+        .lista-ejercicios a::before,
+        .lista-ejercicios a::after {
+            content: " ❖ ";
+            font-size: 1.2rem;
+            color: #8b5a2b;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .lista-ejercicios a:hover::before,
+        .lista-ejercicios a:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Índice de Ejercicios</h1>
+
+    <div class="pergamino-container">
+        <ul class="lista-ejercicios">
+            <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+            <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+            <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+            <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+            <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+            <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+            <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+            <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+            <li><a href="ejercicio9.html">Ejercicio 9</a></li>
+            <li><a href="ejercicio10.html">Ejercicio 10</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
