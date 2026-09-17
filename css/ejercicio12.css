@@ -7,7 +7,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    /* Fondo con la imagen de doro */
+    /* Fondo con la imagen de Doro */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                       url('../img/people-of-nikke-please-lend-your-doro-pictures-for-i-have-v0-crl2thjlj3qe1.webp');
     background-size: cover;
@@ -21,13 +21,13 @@ body {
 }
 
 .container {
-    background-color: rgba(196, 166, 189, 0.9); /* Fondo semi-transparente para leer bien */
+    background-color: rgba(196, 166, 189, 0.9); 
     padding: 20px 25px;
-    border-radius: 0; /* Esquinas del container para que esten cuadradas */
+    border-radius: 0; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     width: fit-content;
     max-width: 380px;
 }
@@ -61,10 +61,11 @@ label {
     font-size: 0.95rem;
 }
 
-input[type="number"], input[type="text"] {
+
+input[type="number"], input[type="text"], select {
     padding: 4px 8px;
     border: 1px solid #9a6d89;
-    border-radius: 0; 
+    border-radius: 0;
     font-size: 0.95rem;
     width: 80px; 
     box-sizing: border-box;
@@ -86,12 +87,12 @@ button {
     background-color: #993ac2;
     color: white;
     border: none;
-    padding: 6px 16px; 
+    padding: 6px 16px;
     cursor: pointer;
     font-weight: bold;
     font-size: 0.9rem;
     border-radius: 0; 
-    width: auto; 
+    width: auto;
     margin-top: 5px;
     transition: background-color 0.2s ease;
 }

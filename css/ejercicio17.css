@@ -7,7 +7,6 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    /* Fondo con la imagen de doro */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                       url('../img/people-of-nikke-please-lend-your-doro-pictures-for-i-have-v0-crl2thjlj3qe1.webp');
     background-size: cover;
@@ -21,15 +20,16 @@ body {
 }
 
 .container {
-    background-color: rgba(196, 166, 189, 0.9); /* Fondo semi-transparente para leer bien */
+    background-color: rgba(196, 166, 189, 0.9);
     padding: 20px 25px;
-    border-radius: 0; /* Esquinas del container para que esten cuadradas */
+    border-radius: 0;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    width: fit-content;
+    align-items: center;
+    width: 100%;
     max-width: 380px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -48,56 +48,78 @@ p {
     text-align: center;
 }
 
-.form-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
 label {
+    display: block;
     font-weight: bold;
     color: #2c0022;
     font-size: 0.95rem;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    width: 100%;
 }
 
-input[type="number"], input[type="text"] {
+input[type="number"], input[type="text"], select {
+    display: block;
     padding: 4px 8px;
     border: 1px solid #9a6d89;
-    border-radius: 0; 
+    border-radius: 0;
     font-size: 0.95rem;
-    width: 80px; 
+    width: 220px;
     box-sizing: border-box;
     text-align: center;
+    margin: 0 auto 6px auto;
 }
 
-
-.lbl-resultado {
-    font-size: 1rem;
-    color: #4a154b;
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-button {
+#beteene, button {
+    display: block;
     background-color: #993ac2;
     color: white;
     border: none;
-    padding: 6px 16px; 
+    padding: 6px 16px;
     cursor: pointer;
     font-weight: bold;
     font-size: 0.9rem;
-    border-radius: 0; 
-    width: auto; 
-    margin-top: 5px;
+    border-radius: 0;
+    width: auto;
+    margin: 10px auto 0 auto;
     transition: background-color 0.2s ease;
 }
 
-button:hover {
+#beteene:hover, button:hover {
     background-color: #bd09ff;
+}
+
+ul, ol, #listaTareas, #tareas {
+    width: 100%;
+    max-width: 280px;
+    padding: 0;
+    margin: 10px auto;
+    list-style: none;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #9a6d89;
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c0022;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+li button {
+    margin: 0 0 0 8px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    background-color: #800020;
+}
+
+li button:hover {
+    background-color: #b30000;
 }
 
 .btn-volver {
